@@ -1,0 +1,95 @@
+{
+  "$schema": "https://schema.yext.com/config/answers/answers-config/v1",
+  "$id": "answers",
+  "name": "Answers",
+  "supportedLocales": [
+    "fr"
+  ],
+  "countryRestrictions": [],
+  "verticals": {
+    "faqs": {
+      "entityTypes": [
+        "faq"
+      ],
+      "name": "FAQs",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "question": {
+          "semanticTextSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    },
+    "locations": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "hours",
+            "mainPhone"
+          ],
+          "predictionMode": "FIELD_NAME"
+        }
+      },
+      "entityTypes": [
+        "location"
+      ],
+      "name": "Locations",
+      "searchableFields": {
+        "builtin.entityType": {
+          "nlpFilter": true
+        },
+        "builtin.location": {
+          "nlpFilter": true
+        },
+        "keywords": {
+          "textSearch": true
+        },
+        "name": {
+          "textSearch": true
+        }
+      },
+      "sortBys": [],
+      "source": "KNOWLEDGE_MANAGER"
+    }
+  },
+  "synonyms": {
+    "oneWay": [],
+    "synonymSet": [
+      [
+        "horaires",
+        "ouvert",
+        "heures d’ouverture"
+      ],
+      [
+        "téléphone principal",
+        "téléphone"
+      ]
+    ]
+  },
+  "localizations": {},
+  "additionalSearchablePlaces": [],
+  "querySuggestions": {
+    "disablePopularQueries": false,
+    "verticalPromptsOnEmpty": false,
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
+      "Pour quelles activités puis-je faire appel à vous?",
+      "Faites-vous du sur-mesure?"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "locations": [
+        "Locations near [[address.city]]",
+        "Locations near [[address.region]]"
+      ]
+    }
+  }
+}
