@@ -1,9 +1,9 @@
 {
   "$id": "trifocals-unfixable-snowfall-99eb9",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
-  "siteName": "answers.${{enter_your_desired_domain}}",
+  "siteName": "answers",
   "repoConfig": {
-    "targetRepoName": "${{beneluxEconetBe_targetRepo}}",
+    "targetRepoName": "${{targetRepo}}",
     "templateRepo": "github.com/yext-pages/answers.beneluxeconet.be"
   },
   "domain": "${{enter_your_desired_domain}}",
